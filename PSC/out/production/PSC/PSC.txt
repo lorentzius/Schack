@@ -1,0 +1,56 @@
+
+        PSC rules
+        =======
+
+In PSC both players execute moves at exactly the same time. When one player makes a move it will only
+be shown to the opponent when the opponent makes a move,and then both moves are executed simultaneously.
+
+Piece moves
+---------------
+
+Pieces move as in chess with the exception that there is no notion of check.
+Putting or leaving your king on an attacked square is allowed.
+For winning conditions see below.
+
+
+Controlled  squares
+-----------------------
+
+Squares can be *attacked* by several pieces.
+A piece attacks the square where it sits, and any square it can move to
+  (including captures), by the rules above.
+You  *control* a square if you have strictly more pieces attacking it than the opponent.
+Controlled squares are highlighted.
+Hit the space bar to toggle highlighting of your or opponent's control.
+
+
+PSC moves
+--------------
+
+A piece is *frozen* if it is attacked by two opponent pieces,
+   i.e., it is on a square controlled by the opponent.
+Frozen pieces of both players are shown on red squares.
+Frozen pieces may not move.
+A PSC move is a move by a mobile (not frozen) piece to a square controlled by the player.
+    (A PSC castle move is a castle where both King and Rook are mobile,
+     and their destinations are controlled.)
+A PSC move may capture a frozen opponent piece (since that square is controlled).
+
+
+Game end
+------------
+
+End conditions are resolved only when both players have moved.
+
+A player wins by either freezing the opponent King, i.e., attacking the square where the opponent king sits
+with at least two pieces, or by checkmating the opponent, i.e., attacking the opponent with at least one piece
+and the opponent has no legal moves.
+
+If both players simultaneously freeze the opponents' king or checkmate the opponent the game is a draw.
+
+A player is stalemated if the player has no legal moves and the King is not attacked.
+If one or both players are stalemated the game is a draw.
+
+
+
+
